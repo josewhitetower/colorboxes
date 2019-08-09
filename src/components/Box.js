@@ -5,8 +5,7 @@ export default function Box({ box, onClick }) {
   return (
     <div
       className={"h-40 w-40 cursor-pointer" + colorClass}
-      onClick={(box, index => onClick(box))}
+      onClick={onClick}
     />
-    // I dont understant the params of the anonymous function
   );
 }
