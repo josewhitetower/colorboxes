@@ -48,6 +48,10 @@ export default class ColorBoxes extends Component {
     const boxes = this.state.boxes.map((box, index) => (
       <Box key={index} box={box} onClick={() => this.handleClick(box)} />
     ));
-    return <div className="ColorBoxes flex flex-wrap my-8">{boxes}</div>;
+    return (
+      <div className="ColorBoxes flex flex-wrap my-8 ml-10 md:ml-0">
+        {boxes}
+      </div>
+    );
   }
 }
